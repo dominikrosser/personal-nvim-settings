@@ -16,6 +16,8 @@ call plug#begin("~/.vim/plugged")
 call plug#end()
 
 "Config Section
+""" Show line numbers
+set number
 """ Color/synta
 " Enable theming support
 if (has("termguicolors"))
