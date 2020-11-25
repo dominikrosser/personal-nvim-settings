@@ -13,3 +13,14 @@ My personal neovim settings
   `~/.config/nvim/`
 
 4. Configure your terminal to use the option key as alt if you're on mac
+
+## Commands
+
+### Open terminal
+`C+N`
+
+### Switch file explorer
+`C+B`
+
+### Switch between panels
+`Alt/Option+j/k/l/h`
