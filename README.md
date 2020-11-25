@@ -24,3 +24,6 @@ My personal neovim settings
 
 ### Switch between panels
 `Alt/Option+j/k/l/h`
+
+### Search files
+`C+P`
