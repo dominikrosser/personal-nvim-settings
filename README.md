@@ -12,7 +12,9 @@ My personal neovim settings
 3. Place the files there:
   `~/.config/nvim/`
 
-4. Configure your terminal to use the option key as alt if you're on mac
+4. Configure your terminal to use the option key as alt if you're on mac.
+   For example, I used the following setting for the kitty terminal (`~/.config/kitty/kitty.conf`):
+   `macos_option_as_alt left`
 
 ## Commands
 
