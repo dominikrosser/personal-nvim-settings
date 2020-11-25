@@ -1,4 +1,13 @@
 # personal-nvim-settings
 My personal neovim settings
 
-The files should be located inside `~/.config/nvim/`.
+## Setup
+
+1. Install nvim, for example with the following command when using homebrew on MacOs:
+  `brew install neovim`
+
+2. Set up vim-plug:
+  `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+
+3. Place the files there:
+  `~/.config/nvim/`
