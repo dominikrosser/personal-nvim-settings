@@ -16,6 +16,8 @@ call plug#begin("~/.vim/plugged")
 call plug#end()
 
 
+"Config Section
+
 let mapleader=","
 
 " FOR COC (https://gitee.com/izhengfan/coc.nvim)
@@ -164,7 +166,6 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " END FOR COC
 
 
-"Config Section
 """ Show line numbers
 set number
 """ Color/synta
@@ -190,13 +191,17 @@ set splitbelow
 " turn terminal to normal mode with escape
 tnoremap <Esc> <C-\><C-n>
 " start terminal in insert mode
-au BufEnter * if &buftype == 'terminal' | :startinsert | endif
+"" au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 " open terminal on ctrl+n
 function! OpenTerminal()
   split term://bash
-  resize 10
+  resize 12
 endfunction
-nnoremap <c-n> :call OpenTerminal()<CR>
+function! OpenTerminalVert()
+  vsplit term://bash
+endfunction
+nnoremap <leader>tj :call OpenTerminal()<CR>
+nnoremap <leader>tl :call OpenTerminalVert()<CR>
 " use alt+hjkl to move between split/vsplit panels
 tnoremap <A-h> <C-\><C-n><C-w>h
 tnoremap <A-j> <C-\><C-n><C-w>j
@@ -214,14 +219,3 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit'
   \}
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
-
-" start terminal in insert mode
-au BufEnter * if &buftype == 'terminal' | :startinsert | endif
-
-" open terminal on ctrl+;
-" uses zsh instead of bash
-function! OpenTerminal()
-  split term://bash
-  resize 10
-endfunction
-nnoremap <c-n> :call OpenTerminal()<CR>
