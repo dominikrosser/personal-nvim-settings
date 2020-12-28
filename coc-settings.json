@@ -15,5 +15,6 @@
     "javascriptreact",
     "typescript.tsx"
   ],
-  "coc.preferences.diagnostic.virtualText": true
+  "coc.preferences.diagnostic.virtualText": true,
+  "rust-analyzer.diagnostics.disabled": ["macro-error"]
 }
