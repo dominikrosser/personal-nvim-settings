@@ -168,6 +168,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 """ Show line numbers
 set number
+set relativenumber
 """ Color/synta
 " Enable theming support
 if (has("termguicolors"))
